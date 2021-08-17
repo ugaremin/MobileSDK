@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CallFragment">
+
+    <EditText
+        android:id="@+id/targetCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="username@example.com"
+        android:text="muhammet4@sdkmobile.ryfq.att.com"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioCallType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="video"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioDouble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audio(Double M Line)"/>
+
+        <RadioButton
+            android:id="@+id/radioSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audio(Single M Line)"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_call"
+        android:padding="10dp" />
+
+</LinearLayout>

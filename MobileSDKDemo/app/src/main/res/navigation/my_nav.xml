@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/chattFragment">
+
+    <fragment
+        android:id="@+id/chattFragment"
+        android:name="com.example.mobilesdkdemo.ChatFragment"
+        android:label="Chatt"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.mobilesdkdemo.UsersFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_users" />
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.mobilesdkdemo.CallFragment"
+        android:label="Call"
+        tools:layout="@layout/fragment_call" />
+</navigation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".InOutGoingVideoCallActivity"
+    android:background="#454242">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <com.rbbn.cpaas.mobile.core.webrtc.view.VideoView
+            android:id="@+id/remoteVideoView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingRight="20dp">
+
+        </com.rbbn.cpaas.mobile.core.webrtc.view.VideoView>
+
+        <com.rbbn.cpaas.mobile.core.webrtc.view.VideoView
+            android:id="@+id/localVideoView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingLeft="20dp">
+
+        </com.rbbn.cpaas.mobile.core.webrtc.view.VideoView>
+
+    </LinearLayout>
+
+    <Chronometer
+        android:id="@+id/chorometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TableLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_endCall"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_call_end"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="50dp">
+
+
+            <Button
+                android:id="@+id/btn_hold"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_hold_on"/>
+
+            <Button
+                android:id="@+id/btn_mute"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_mic_on"
+                />
+
+            <Button
+                android:id="@+id/btn_video"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_video_on" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>
